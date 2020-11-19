@@ -5,9 +5,15 @@ import { createStore } from 'redux';
 
 import App from './containers/App';
 
-const store = createStore();
+function reducer() {
+  return {
+    count: 42
+  };
+}
+
+const store = createStore(reducer);
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
-  <Provider/>, document.getElementById('root'));
+  </Provider>, document.getElementById('root'));
