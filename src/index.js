@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-import App from './containers/App';
+import Counter from './containers/Counter';
 
 const initialState = {
   count: 0
@@ -26,7 +26,10 @@ function reducer(state = initialState, action) {
 
 const store = createStore(reducer);
 
-ReactDOM.render(
+const App = () => (
   <Provider store={store}>
-    <App />
-  </Provider>, document.getElementById('root'));
+    <Counter/>
+  </Provider>
+);
+
+ReactDOM.render(<App />, document.getElementById('root'));
