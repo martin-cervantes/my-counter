@@ -10,11 +10,11 @@ class App extends React.Component {
   }
 
   increment() {
-    // increment
+    this.props.dispatch({ type: 'INCREMENT' });
   }
 
   decrement() {
-    // decrement
+    this.props.dispatch({ type: 'DECREMENT' });
   }
 
   render() {
