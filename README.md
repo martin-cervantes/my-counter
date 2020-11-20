@@ -60,13 +60,6 @@ Builds the app for production to the `build` folder. It correctly bundles React 
 
 The build is minified and the filenames include the hashes. Your app is ready to be deployed!
 
-```sh
-  $ npm test
-```
-
-Launches the test runner in the interactive watch mode.
-
-
 ## :busts_in_silhouette: Authors
 
 👤 **Martin Cervantes**
