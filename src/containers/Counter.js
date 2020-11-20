@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { counterIncrement, counterDecrement } from '../actions';
 
 class App extends React.Component {
   constructor(props) {
@@ -10,11 +11,11 @@ class App extends React.Component {
   }
 
   increment() {
-    this.props.dispatch({ type: 'INCREMENT' });
+    this.props.dispatch(counterIncrement());
   }
 
   decrement() {
-    this.props.dispatch({ type: 'DECREMENT' });
+    this.props.dispatch(counterDecrement());
   }
 
   render() {
