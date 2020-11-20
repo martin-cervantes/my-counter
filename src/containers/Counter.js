@@ -2,7 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { counterIncrement, counterDecrement } from '../actions';
 
-class App extends React.Component {
+import Button from '../components/Button';
+import Display from '../components/Display';
+
+class Counter extends React.Component {
   constructor(props) {
     super(props);
 
@@ -20,12 +23,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>Counter</h2>
-        <div>
-          <button onClick={this.decrement}>-</button>
-          <span>{this.props.count}</span>
-          <button onClick={this.increment}>+</button>
+      <div class="counter">
+        <h2 class="title">Counter</h2>
+        <div class="countainer">
+          <Button text="-" clickHandle={this.decrement} />
+          <Display text={this.props.count} />
+          <Button text="+" clickHandle={this.increment} />
         </div>
       </div>
     )
@@ -38,4 +41,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps)(Counter);
