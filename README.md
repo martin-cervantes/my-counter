@@ -13,6 +13,10 @@ This project is about creating a very simple React and Redux application. Dealin
 - Redux
 - npm
 
+## :mag: Live Demo
+
+[Live Demo Link](https://mcervantes71.githup.io/my-counter/index.html)
+
 ## :computer: Getting Started
 
 To get a local copy up and running follow these simple steps.
