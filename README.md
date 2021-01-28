@@ -15,7 +15,7 @@ This project is about creating a very simple React and Redux application. Dealin
 
 ## :mag: Live Demo
 
-[Live Demo Link](https://mcervantes71.githup.io/my-counter/index.html)
+[Live Demo Link](https://mcervantes71.github.io/my-counter/index.html)
 
 ## :computer: Getting Started
 
