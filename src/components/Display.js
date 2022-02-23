@@ -1,9 +1,7 @@
 import React from 'react';
 
-export default function Display(props) {
-  const { text } = props;
+const Display = ({ text }) => (
+  <span className="display">{ text }</span>
+);
 
-  return (
-    <span class="display">{ text }</span>
-  );
-}
+export default Display;

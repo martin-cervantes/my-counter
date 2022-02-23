@@ -11,7 +11,7 @@ const store = createStore(counterReducer);
 
 const App = () => (
   <Provider store={store}>
-    <Counter/>
+    <Counter />
   </Provider>
 );
 

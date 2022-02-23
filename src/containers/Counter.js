@@ -23,22 +23,20 @@ class Counter extends React.Component {
 
   render() {
     return (
-      <div class="counter">
-        <h2 class="title">Counter</h2>
-        <div class="countainer">
+      <div className="counter">
+        <h2 className="title">Counter</h2>
+        <div className="countainer">
           <Button text="-" clickHandle={this.decrement} />
           <Display text={this.props.count} />
           <Button text="+" clickHandle={this.increment} />
         </div>
       </div>
-    )
+    );
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    count: state.count
-  };
-}
+const mapStateToProps = (state) => ({
+  count: state.count
+});
 
 export default connect(mapStateToProps)(Counter);
